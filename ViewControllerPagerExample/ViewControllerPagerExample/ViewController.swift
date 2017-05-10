@@ -50,6 +50,7 @@ class ViewController: UIViewController, ViewControllerPagerDelegate, ViewControl
             if vc == nil {
              
                 vc = storyboard.instantiateViewController(withIdentifier: "ChildViewController1") as? PageViewController
+                vc?.identifier = "ChildViewController1"
             }
             
         } else if index == 1 {
@@ -59,6 +60,7 @@ class ViewController: UIViewController, ViewControllerPagerDelegate, ViewControl
             if vc == nil {
                 
                 vc = storyboard.instantiateViewController(withIdentifier: "ChildViewController2") as? PageViewController
+                vc?.identifier = "ChildViewController2"
             }
             
         } else {
@@ -68,6 +70,7 @@ class ViewController: UIViewController, ViewControllerPagerDelegate, ViewControl
             if vc == nil {
                 
                 vc = storyboard.instantiateViewController(withIdentifier: "ChildViewController3") as? PageViewController
+                vc?.identifier = "ChildViewController3"
             }
             
         }
