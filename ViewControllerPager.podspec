@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name = 'ViewControllerPager'
-    s.version = '1.0.0'
+    s.version = '1.0.2'
     s.summary = 'iOS ViewController Pager'
 
     s.description  = 'This library is similar to the Android ViewPager style.'
