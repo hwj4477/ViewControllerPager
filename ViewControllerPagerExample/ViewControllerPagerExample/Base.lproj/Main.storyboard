@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewControllerPager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFK-zv-K4c" customClass="ViewControllerPager" customModule="ViewControllerPager" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.69803921570000005" blue="0.8862745098" alpha="0.13328014964788731" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NFK-zv-K4c" secondAttribute="bottom" id="3fH-at-5mb"/>
+                            <constraint firstItem="NFK-zv-K4c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lmy-xL-nSa"/>
+                            <constraint firstItem="NFK-zv-K4c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qk4-eZ-TdW"/>
+                            <constraint firstAttribute="trailing" secondItem="NFK-zv-K4c" secondAttribute="trailing" id="wnh-BA-eYQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewControllerPager" destination="NFK-zv-K4c" id="cxz-xI-qIj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="HDK-4f-0Mu">
+            <objects>
+                <viewController storyboardIdentifier="ChildViewController1" id="HQ3-GT-TAx" customClass="PageViewController" customModule="ViewControllerPager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NQu-3R-UQM"/>
+                        <viewControllerLayoutGuide type="bottom" id="OST-Tl-uYa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gy9-VI-32X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqP-bZ-bLI">
+                                <rect key="frame" x="183" y="323" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DqP-bZ-bLI" firstAttribute="centerY" secondItem="Gy9-VI-32X" secondAttribute="centerY" id="cEJ-b1-MYa"/>
+                            <constraint firstItem="DqP-bZ-bLI" firstAttribute="centerX" secondItem="Gy9-VI-32X" secondAttribute="centerX" id="uPy-o3-1aA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xy8-PN-arE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="-205"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="O9H-b6-V0p">
+            <objects>
+                <viewController storyboardIdentifier="ChildViewController3" id="A1R-k8-Xlh" customClass="PageViewController" customModule="ViewControllerPager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RER-u3-UlC"/>
+                        <viewControllerLayoutGuide type="bottom" id="glP-A1-5fl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EhU-kY-d0p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkE-NE-Dnf">
+                                <rect key="frame" x="182.5" y="323.5" width="10.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65098039220000004" green="0.36470588240000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tkE-NE-Dnf" firstAttribute="centerY" secondItem="EhU-kY-d0p" secondAttribute="centerY" id="0QM-lp-C4e"/>
+                            <constraint firstItem="tkE-NE-Dnf" firstAttribute="centerX" secondItem="EhU-kY-d0p" secondAttribute="centerX" id="T5W-Lu-Ma9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LrJ-NP-Kim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="466"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="rzg-UU-btd">
+            <objects>
+                <viewController storyboardIdentifier="ChildViewController2" id="DmI-Cw-HEF" customClass="PageViewController" customModule="ViewControllerPager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CLw-57-Rxt"/>
+                        <viewControllerLayoutGuide type="bottom" id="ycH-fU-XNU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GHG-Yx-G2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNT-X9-854">
+                                <rect key="frame" x="182.5" y="323" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2156862745" green="0.42745098040000001" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aNT-X9-854" firstAttribute="centerY" secondItem="GHG-Yx-G2Y" secondAttribute="centerY" id="Tix-BM-jot"/>
+                            <constraint firstItem="aNT-X9-854" firstAttribute="centerX" secondItem="GHG-Yx-G2Y" secondAttribute="centerX" id="yjV-bU-ODv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CeH-Ef-hJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="-206"/>
+        </scene>
+    </scenes>
+</document>
