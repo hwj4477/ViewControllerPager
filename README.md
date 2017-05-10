@@ -44,9 +44,16 @@ class ViewController: ViewControllerPagerDelegate, ViewControllerPagerDataSource
 func pageViewController(_ viewControllerPager: ViewControllerPager, index: Int) -> PageViewController?
 func pageCount(_ viewControllerPager: ViewControllerPager) -> Int
 ```
+
 ### ViewControllerPagerDelegate
 ```swift
 // page change event
 @objc optional func didAppearPage(_ viewControllerPager: ViewControllerPager, index: Int)
 @objc optional func didDisAppearPage(_ viewControllerPager: ViewControllerPager, index: Int)
+```
+
+### Functions
+```swift
+// be returned PageViewController for reuse
+func dequeueReuseablePageWithIdentifier(_ identifier: String) -> PageViewController?
 ```
