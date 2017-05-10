@@ -1,4 +1,4 @@
-# CustomPickerDialog-Swift
+# ViewControllerPager
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
@@ -21,4 +21,32 @@ import ViewControllerPager
 ```
 
 # Usage
+### set Delegate
+```swift
+class ViewController: ViewControllerPagerDelegate, ViewControllerPagerDataSource {
 
+    @IBOutlet weak var viewControllerPager: ViewControllerPager!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        viewControllerPager.dataSource = self
+        viewControllerPager.delegate = self
+
+        viewControllerPager.reloadPages()
+    }
+}
+
+```
+### ViewControllerPagerDataSource
+```swift
+// set pages
+func pageViewController(_ viewControllerPager: ViewControllerPager, index: Int) -> PageViewController?
+func pageCount(_ viewControllerPager: ViewControllerPager) -> Int
+```
+### ViewControllerPagerDelegate
+```swift
+// page change event
+@objc optional func didAppearPage(_ viewControllerPager: ViewControllerPager, index: Int)
+@objc optional func didDisAppearPage(_ viewControllerPager: ViewControllerPager, index: Int)
+```
