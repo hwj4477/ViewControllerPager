@@ -70,7 +70,7 @@ class ViewController: UIViewController, ViewControllerPagerDelegate, ViewControl
             if vc == nil {
                 
                 vc = storyboard.instantiateViewController(withIdentifier: "ChildViewController3") as? PageViewController
-                vc?.identifier = "ChildViewController3"
+                vc?.identifier = "ChildViewController1"
             }
             
         }

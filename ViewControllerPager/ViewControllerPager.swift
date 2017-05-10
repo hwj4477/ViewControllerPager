@@ -26,6 +26,9 @@ class ViewControllerPager: UIView, UIScrollViewDelegate {
     weak var dataSource: ViewControllerPagerDataSource?
     weak var delegate: ViewControllerPagerDelegate?
     
+    // super ViewController
+    var viewController: UIViewController?
+    
     let scrollView: UIScrollView = UIScrollView()
     
     var pages: [PageViewController] = [PageViewController]()
